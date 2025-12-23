@@ -1,13 +1,14 @@
+title = '漢留雜誌'
+defaultContentLanguage = 'zh'
+languageCode = 'zh'
 baseURL = 'https://example.org/'
-languageCode = 'en-US'
-title = 'My New Hugo Site'
 
-[rusty_typewriter]
- [params.rtwt]
+[hankeep]
+ [params.hankeep]
   sidePane = true
   countPageItems = 7 
   searchPath = 'search'
- [params.rtwt.home]
+ [params.hankeep.home]
   showBio = true
   showAuthorImg = true
   sidePaneTags = true
@@ -15,13 +16,14 @@ title = 'My New Hugo Site'
   showRecent = true
   hideRecentWhenFeatured = true
   countRecent = 5
- [params.rtwt.side.home]
+ [params.hankeep.side.home]
   sidePaneSticky = false 
   taxonomies = ['tags']
+  taxonomyTitles = ['tags']
   countTaxonomy = 6
- [params.rtwt.side.list]
+ [params.hankeep.side.list]
   sidePaneSticky = false
- [params.rtwt.side.single]
+ [params.hankeep.side.single]
   sidePaneSticky = true 
   showDetails = true
   showTableOfContents = true
@@ -43,10 +45,10 @@ title = 'My New Hugo Site'
 
 [params.links]
  hugo = 'https://gohugo.io/'
- theme = 'https://github.com/math-queiroz/rusty-typewriter'
+ theme = 'https://github.com/hankeep/hugo-theme-hankeep'
 
 [[menus.main]]
- name = 'Posts'
+ name = '貼文目錄'
  pageRef = '/posts'
  weight = 1
 

@@ -1,7 +1,7 @@
 {{- define "main" -}}
   <h1>{{- partial "title.html" . -}}</h1>
   {{- .Content -}}
-  {{- $pages := (.Paginate (.Pages.GroupByDate "2006") site.Params.rtwt.countPageItems) -}}
+  {{- $pages := (.Paginate (.Pages.GroupByDate "2006") site.Params.hankeep.countPageItems) -}}
   {{- range $pages.PageGroups -}}
     <div class="list-group-key">{{- .Key -}}</div>
     {{- range .Pages -}}
@@ -18,7 +18,7 @@
 {{- end -}}
 
 {{- define "side" -}}
-  <!-- <aside id="side-pane" class="{{- cond site.Params.rtwt.side.list.sidePaneSticky "side-sticky" "" -}}">
+  <!-- <aside id="side-pane" class="{{- cond site.Params.hankeep.side.list.sidePaneSticky "side-sticky" "" -}}">
     {{- partial "side/list.html" . -}}
   </aside> -->
 {{- end -}}

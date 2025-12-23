@@ -1,1 +1,6 @@
-{{- default (path.Dir . | path.Base | title) .Title -}}
+{{- $title := default (path.Dir . | path.Base | title) .Title -}}
+{{- $title := cond (eq $title "Posts") (i18n "posts") $title -}}
+{{- $title := cond (eq $title "Tags") (i18n "tags") $title -}}
+{{- $title := cond (eq $title "Series") (i18n "series") $title -}}
+{{- $title := cond (eq $title "Topics") (i18n "topics") $title -}}
+{{- $title -}}

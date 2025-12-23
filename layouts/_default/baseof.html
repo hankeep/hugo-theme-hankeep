@@ -17,7 +17,7 @@
           {{- partial "footer.html" . -}}
         </footer>
       </div>
-      {{- if (and (default true .Params.rtwt.sidePane) site.Params.rtwt.sidePane) -}}
+      {{- if (and (default true .Params.hankeep.sidePane) site.Params.hankeep.sidePane) -}}
         {{- block "side" . -}}{{- end -}}
       {{- end -}}
     </div>

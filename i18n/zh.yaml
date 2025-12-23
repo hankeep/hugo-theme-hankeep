@@ -1,0 +1,37 @@
+# 全局
+theme_light: 明亮主題
+theme_dark: 暗黑主題
+
+# 404 頁面
+not_found_title: 糟糕，頁面未找到！
+not_found_desc: 並非所有漫遊者都迷失了方向，但這裡已經沒有什麼值得探索的了
+not_found_home_link: 返回首頁
+
+# 頁尾
+scroll_top: 回到頂部
+footer: Powered by {{ .ThemeAnchor }} theme for {{ .HugoAnchor }}
+
+# 首頁
+featured_posts: 精選貼文
+recent_posts: 最新貼文
+# 搜尋
+js_required: 必須啟用 JavaScript 才能進行搜尋
+search_loading: 載入中…
+search_placeholder: 搜尋…
+
+# 首頁滑動窗格
+see_all: 看全部…
+
+# 頁面
+home: 首頁
+posts: 貼文
+tags: 標籤
+series: 系列
+topics: 主題
+
+# 貼文滑動窗格
+details_words: 字
+details_read_time: 分鐘閲讀
+side_table_of_contents: 目錄
+side_attachments: 附件
+side_related: 相關貼文
